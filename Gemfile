@@ -24,6 +24,8 @@ gem 'jbuilder'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+gem 'omniauth-auth0'
+gem 'omniauth-rails_csrf_protection'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap'
