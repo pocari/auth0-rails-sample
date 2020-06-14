@@ -14,7 +14,7 @@ class Auth0Controller < ApplicationController
       user.uid = request.env['omniauth.auth']['uid']
       user.name = request.env['omniauth.auth']['info']['name']
       user.email = request.env['omniauth.auth']['info']['email']
-      user.avator = request.env['omniauth.auth']['info']['image']
+      user.avatar = request.env['omniauth.auth']['info']['image']
 
       if user.save
         msg = "サインアップしました"

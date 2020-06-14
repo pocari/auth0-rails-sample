@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     if u.save
       state = session[:state]
       session[state] = u.id
-      redirect_to "https://#{ENV.fetch('AUTH0_DOMAIN')}/continue?state=#{session[:state]}", status: 307
+      redirect_to "https://#{ENV.fetch('AUTH0_DOMAIN')}/continue?state=#{session[:state]}"
     else
       flash.now[:alert] = '登録できませんでした'
       render :new

@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_06_14_021614) do
     t.string "signup_key"
     t.string "name"
     t.string "email"
-    t.string "avator"
+    t.string "avatar"
     t.string "provider"
     t.string "uid"
   end
