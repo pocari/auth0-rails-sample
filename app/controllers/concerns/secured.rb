@@ -8,6 +8,6 @@ module Secured
 
   def logged_in_using_omniauth?
     # binding.pry
-    redirect_to '/' unless current_user
+    redirect_to '/', alert: 'ログインしてください' unless current_user
   end
 end
