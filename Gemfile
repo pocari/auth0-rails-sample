@@ -26,8 +26,9 @@ gem 'jbuilder'
 # gem 'image_processing', '~> 1.2'
 gem 'omniauth-auth0'
 gem 'omniauth-rails_csrf_protection'
-
-# Reduces boot times through caching; required in config/boot.rb
+gem 'pry-byebug'
+gem 'pry-rails'
+# Reduces boot times n/rathrough caching; required in config/boot.rb
 gem 'bootsnap'
 
 group :development, :test do

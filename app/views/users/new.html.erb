@@ -1,0 +1,9 @@
+<h1>Signup#new</h1>
+<p>Find me in app/views/signup/new.html.erb</p>
+
+<%= form_for @user do |f| %>
+  <%= f.hidden_field :signup_key %>
+  extra1: <%= f.text_field :extra1 %>
+
+  <%= f.submit "submit" %>
+<% end %>
