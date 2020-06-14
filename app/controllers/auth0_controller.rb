@@ -30,7 +30,7 @@ class Auth0Controller < ApplicationController
     end
 
     session[:user_id] = user.id
-    redirect_to '/dashboard', success: msg
+    redirect_to '/dashboard', notice: msg
   end
 
   def failure

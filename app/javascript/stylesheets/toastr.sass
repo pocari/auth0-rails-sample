@@ -1,0 +1,24 @@
+@import '~toastr'
+
+// toastr
+.toast
+  left: auto
+  bottom: auto
+  transition: none
+  transform: none
+#toast-container
+  &.toast-bottom-center
+    bottom: 15px
+  & > div
+    opacity: 1
+    &:hover
+      box-shadow: 0 0 12px #999
+      opacity: .8
+.toast-success
+  background-color: #33cabb
+.toast-error
+  background-color: #f96868
+.toast-info
+  background-color: #48b0f7
+.toast-warning
+  background-color: #f2a654
